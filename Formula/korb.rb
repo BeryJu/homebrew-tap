@@ -5,20 +5,20 @@
 class Korb < Formula
   desc "Move Kubernetes PVCs between Storage Classes and Namespaces"
   homepage "https://github.com/beryju/korb"
-  version "2.2.0"
+  version "2.3.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/BeryJu/korb/releases/download/v2.2.0/korb_darwin_amd64"
-      sha256 "e90e7125ce77aa50ca907f15f9958f18fbf2d3787d0f3e01e510892e3164e049"
+      url "https://github.com/BeryJu/korb/releases/download/v2.3.1/korb_darwin_amd64"
+      sha256 "c5cbc97391d5ffc923c5baaa51f3a2a60f4906ac57bf5c0407c08eb8edc98aa5"
 
       def install
         bin.install "korb_darwin_amd64" => "korb"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/BeryJu/korb/releases/download/v2.2.0/korb_darwin_arm64"
-      sha256 "1797395fcc315b7c61aa7ea5822bd3838f92e5ea7aa60a3d1a6b0f588197ec54"
+      url "https://github.com/BeryJu/korb/releases/download/v2.3.1/korb_darwin_arm64"
+      sha256 "b2627528b040786f56c253a7400bedc22da47c7aa889f8b0a05b18643a24eb9c"
 
       def install
         bin.install "korb_darwin_arm64" => "korb"
@@ -27,28 +27,28 @@ class Korb < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/BeryJu/korb/releases/download/v2.2.0/korb_linux_arm64"
-      sha256 "e7bab65197c442ed34c8fad91621f5c710d36eca6ca027ef1c3fef55b6eedaa2"
-
-      def install
-        bin.install "korb_linux_arm64" => "korb"
-      end
-    end
     if Hardware::CPU.intel?
-      url "https://github.com/BeryJu/korb/releases/download/v2.2.0/korb_linux_amd64"
-      sha256 "2becd48004ee076a3221f327d6590ef3b0d6429a304f24ac0a12e956dcc2b4e8"
+      url "https://github.com/BeryJu/korb/releases/download/v2.3.1/korb_linux_amd64"
+      sha256 "28f9da933361b8a48197011d29f863bc702f3d581cb5c48f306843e2c60ff8ac"
 
       def install
         bin.install "korb_linux_amd64" => "korb"
       end
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/BeryJu/korb/releases/download/v2.2.0/korb_linux_arm"
-      sha256 "934807c32d42cebe6db59e386dd518011749ccf01d56e91c770c993a867447fd"
+      url "https://github.com/BeryJu/korb/releases/download/v2.3.1/korb_linux_arm"
+      sha256 "1b827d7168a91a55305c5ecbd6a06371848228166db0aa1116a3edaf30018c1f"
 
       def install
         bin.install "korb_linux_arm" => "korb"
+      end
+    end
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/BeryJu/korb/releases/download/v2.3.1/korb_linux_arm64"
+      sha256 "4e7f62a90046d7fd6cf6e258e171921920058d808c8bbc34e92a064dba686322"
+
+      def install
+        bin.install "korb_linux_arm64" => "korb"
       end
     end
   end
