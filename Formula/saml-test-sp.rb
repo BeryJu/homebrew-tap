@@ -5,20 +5,20 @@
 class SamlTestSp < Formula
   desc "Small, SAML ServiceProvider for testing and debugging"
   homepage "https://github.com/beryju/saml-test-sp"
-  version "1.1"
+  version "1.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/BeryJu/saml-test-sp/releases/download/v1.1/saml-test-sp_darwin_amd64"
-      sha256 "ffee09f547c49317f45f308ee9a0502867735b9f1bae76014c985ff3b9fa85ea"
+      url "https://github.com/BeryJu/saml-test-sp/releases/download/v1.2/saml-test-sp_darwin_amd64"
+      sha256 "682d13447ba4cd3487ee4443b5dc6cfdf464f852b7b4807e050452417a4f5c2a"
 
       def install
         bin.install "saml-test-sp_darwin_amd64" => "saml-test-sp"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/BeryJu/saml-test-sp/releases/download/v1.1/saml-test-sp_darwin_arm64"
-      sha256 "24ed8304e5503afa7a42552a4e85478e492a6a9c20fc716625fd9d83286ab03f"
+      url "https://github.com/BeryJu/saml-test-sp/releases/download/v1.2/saml-test-sp_darwin_arm64"
+      sha256 "0c5fc480905f4080c9990c6f29904df579d15efd81caa88c3fbbd6d56c720a49"
 
       def install
         bin.install "saml-test-sp_darwin_arm64" => "saml-test-sp"
@@ -27,26 +27,23 @@ class SamlTestSp < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/BeryJu/saml-test-sp/releases/download/v1.1/saml-test-sp_linux_armv6"
-      sha256 "0a2092f0e93721b9171270a3b9b22cbb56a3d53eb7d7184f4e7942440a90e4de"
-
-      def install
-        bin.install "saml-test-sp_linux_armv6" => "saml-test-sp"
-      end
-    end
-    if Hardware::CPU.intel?
-      url "https://github.com/BeryJu/saml-test-sp/releases/download/v1.1/saml-test-sp_linux_amd64"
-      sha256 "3b5cb03e8b2128ef80a4c52bbcce40f107625d5bd97c582225b333ce45ba6378"
-
+    if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
+      url "https://github.com/BeryJu/saml-test-sp/releases/download/v1.2/saml-test-sp_linux_amd64"
+      sha256 "7bc8763b01d79fd8dd68ca60479264bd51c2aab8e3dde5bf9e6039bdc7a4b1fe"
       def install
         bin.install "saml-test-sp_linux_amd64" => "saml-test-sp"
       end
     end
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/BeryJu/saml-test-sp/releases/download/v1.1/saml-test-sp_linux_arm64"
-      sha256 "6ffb688d9a481690e0908e8f22cdd677ae85d50eb6609d7960abc89af5e5cf25"
-
+    if Hardware::CPU.arm? and !Hardware::CPU.is_64_bit?
+      url "https://github.com/BeryJu/saml-test-sp/releases/download/v1.2/saml-test-sp_linux_armv6"
+      sha256 "9c6feba95670bf7cbde3004cb1485e9a72af63ce1d020cc97c5134eed249de96"
+      def install
+        bin.install "saml-test-sp_linux_armv6" => "saml-test-sp"
+      end
+    end
+    if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
+      url "https://github.com/BeryJu/saml-test-sp/releases/download/v1.2/saml-test-sp_linux_arm64"
+      sha256 "a134f534ba89a7739fcd6f8cd26fcc317689240e3799a21166c2bfa7c39b30c0"
       def install
         bin.install "saml-test-sp_linux_arm64" => "saml-test-sp"
       end
