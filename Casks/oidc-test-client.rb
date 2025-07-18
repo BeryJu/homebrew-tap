@@ -2,7 +2,7 @@
 cask "oidc-test-client" do
   desc "Small, OIDC Client, to debug and test OIDC providers"
   homepage "https://github.com/beryju/oidc-test-client"
-  version "2.5"
+  version "2.6"
 
   livecheck do
     skip "Auto-generated on release."
@@ -12,23 +12,23 @@ cask "oidc-test-client" do
 
   on_macos do
     on_intel do
-      url "https://github.com/BeryJu/oidc-test-client/releases/download/v2.5/oidc-test-client_darwin_amd64"
-      sha256 "ac4786a817d757e216ca5fa5f3b54efcad562eeac4f967a6b73d93442be79d95"
+      url "https://github.com/BeryJu/oidc-test-client/releases/download/v2.6/oidc-test-client_2.6_darwin_amd64.tar.gz"
+      sha256 "b5313a9040e7b1aec22733b570612347c80a2e72d882eb11f014a1af6bb80be0"
     end
     on_arm do
-      url "https://github.com/BeryJu/oidc-test-client/releases/download/v2.5/oidc-test-client_darwin_arm64"
-      sha256 "7e6915d80b18d4463549fcc23f1e61fa72fe1ce34ab60b3424c623241054f9c8"
+      url "https://github.com/BeryJu/oidc-test-client/releases/download/v2.6/oidc-test-client_2.6_darwin_arm64.tar.gz"
+      sha256 "ee9afc94fb6f1a0d6fcafca03cc9c88bf54c4ac33b3ba5acc749d4d0f6d2e486"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/BeryJu/oidc-test-client/releases/download/v2.5/oidc-test-client_linux_amd64"
-      sha256 "af66f6662cad1e26a81d6622aa844bb5ff999317279afa4e0573a76441c2301c"
+      url "https://github.com/BeryJu/oidc-test-client/releases/download/v2.6/oidc-test-client_2.6_linux_amd64.tar.gz"
+      sha256 "36212fffe1d3e1105b774ca199373dc984d30be08d9dd00a6564d3af295a52da"
     end
     on_arm do
-      url "https://github.com/BeryJu/oidc-test-client/releases/download/v2.5/oidc-test-client_linux_arm64"
-      sha256 "b4ebcc7f0ab6957588ac3714e7bd417c474fa3719b58be02dfec1fcb53706b7c"
+      url "https://github.com/BeryJu/oidc-test-client/releases/download/v2.6/oidc-test-client_2.6_linux_arm64.tar.gz"
+      sha256 "c5d8fb13b92ad8b5f2290d1446a71f02a3fff1c34978ec9c901b21c49ad1334e"
     end
   end
 
