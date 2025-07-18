@@ -2,7 +2,7 @@
 cask "korb" do
   desc "Move Kubernetes PVCs between Storage Classes and Namespaces"
   homepage "https://github.com/beryju/korb"
-  version "2.3.3"
+  version "2.3.4"
 
   livecheck do
     skip "Auto-generated on release."
@@ -12,23 +12,23 @@ cask "korb" do
 
   on_macos do
     on_intel do
-      url "https://github.com/BeryJu/korb/releases/download/v2.3.3/korb_darwin_amd64"
-      sha256 "4a57067bb7403b57e89338d2626421a7709fb06942f7f8759262781cf7663203"
+      url "https://github.com/BeryJu/korb/releases/download/v2.3.4/korb_2.3.4_darwin_amd64.tar.gz"
+      sha256 "7835e83c4d8aed7357c2fd48f1a68634ca08d01317800b6997372b3728598308"
     end
     on_arm do
-      url "https://github.com/BeryJu/korb/releases/download/v2.3.3/korb_darwin_arm64"
-      sha256 "90649fa3b487e443a3a75a977799d2781cd06537957110af2c8a15b337ad18ca"
+      url "https://github.com/BeryJu/korb/releases/download/v2.3.4/korb_2.3.4_darwin_arm64.tar.gz"
+      sha256 "a8295da1620e862a5f6611b942ab95c99b842bf52ef6bde9c953056fff5667ca"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/BeryJu/korb/releases/download/v2.3.3/korb_linux_amd64"
-      sha256 "11c7ffd44572ea48e6fe41a5c61cd7e28690bc999a61c64b95f1755e44bb82f5"
+      url "https://github.com/BeryJu/korb/releases/download/v2.3.4/korb_2.3.4_linux_amd64.tar.gz"
+      sha256 "892213c9a11d2cb87d5db374344b27cba48801380c9c8582863880dce493e5ce"
     end
     on_arm do
-      url "https://github.com/BeryJu/korb/releases/download/v2.3.3/korb_linux_arm64"
-      sha256 "7c50e20e89664c17ef4f601960081643b11cfb0e799be14c23056352370b1689"
+      url "https://github.com/BeryJu/korb/releases/download/v2.3.4/korb_2.3.4_linux_arm64.tar.gz"
+      sha256 "fa4e127eac7f2346d0e0c819c3e89680f9e8d10a0d1f617d8fd2be8b85d4b861"
     end
   end
 
