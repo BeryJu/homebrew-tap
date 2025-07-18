@@ -2,7 +2,7 @@
 cask "saml-test-sp" do
   desc "Small, SAML ServiceProvider for testing and debugging"
   homepage "https://github.com/beryju/saml-test-sp"
-  version "1.3"
+  version "1.4"
 
   livecheck do
     skip "Auto-generated on release."
@@ -12,23 +12,23 @@ cask "saml-test-sp" do
 
   on_macos do
     on_intel do
-      url "https://github.com/BeryJu/saml-test-sp/releases/download/v1.3/saml-test-sp_darwin_amd64"
-      sha256 "d9405310af4906822c348ba6721d7a1372fb5277e1ced25b6214fff90acb0fea"
+      url "https://github.com/BeryJu/saml-test-sp/releases/download/v1.4/saml-test-sp_1.4_darwin_amd64.tar.gz"
+      sha256 "af9fb85d5e9fd0d00dcbf52a55bbbb231747506a19c2a3eba975e1b8ec1bf777"
     end
     on_arm do
-      url "https://github.com/BeryJu/saml-test-sp/releases/download/v1.3/saml-test-sp_darwin_arm64"
-      sha256 "61349605caea11781e81fa7aad9c91b25153cc7d847f07a70996921e4e20cb50"
+      url "https://github.com/BeryJu/saml-test-sp/releases/download/v1.4/saml-test-sp_1.4_darwin_arm64.tar.gz"
+      sha256 "0fa1b071d872153b34e63cefe80833ba645db5d7dfe430c5f693b5218f1840da"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/BeryJu/saml-test-sp/releases/download/v1.3/saml-test-sp_linux_amd64"
-      sha256 "6e4e63217f59f35c8da67d8cfce3abf4b62c303261fef7545f7948562a609a1c"
+      url "https://github.com/BeryJu/saml-test-sp/releases/download/v1.4/saml-test-sp_1.4_linux_amd64.tar.gz"
+      sha256 "ee1d61a28a2ef84eef9de301f82c51497ed1b47611d38f9b3215539f07e8ab06"
     end
     on_arm do
-      url "https://github.com/BeryJu/saml-test-sp/releases/download/v1.3/saml-test-sp_linux_arm64"
-      sha256 "021a45160406bfa387d747fe423aef998c241a06a199bc4366da2bfa6af897f7"
+      url "https://github.com/BeryJu/saml-test-sp/releases/download/v1.4/saml-test-sp_1.4_linux_arm64.tar.gz"
+      sha256 "26c3a9e9bdf2d971edd81b0ce96f1d265e4f522045e884007aecdb67b9e70a9e"
     end
   end
 
