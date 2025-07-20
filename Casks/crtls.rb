@@ -2,7 +2,7 @@
 cask "crtls" do
   desc "Tool for creating a CA and Certificates, mainly aimed at testing setups"
   homepage "https://github.com/BeryJu/crtls"
-  version "0.1.2"
+  version "0.1.3"
 
   livecheck do
     skip "Auto-generated on release."
@@ -15,23 +15,23 @@ cask "crtls" do
 
   on_macos do
     on_intel do
-      url "https://github.com/BeryJu/crtls/releases/download/v0.1.2/crtls_0.1.2_darwin_amd64.tar.gz"
-      sha256 "6c56b22eee89c5ec8c710d5e57b1e4195403b5c0ebf3aa87829da3a45a49a67e"
+      url "https://github.com/BeryJu/crtls/releases/download/v0.1.3/crtls_0.1.3_darwin_amd64.tar.gz"
+      sha256 "f61fd1c579db186077030342b509a33e0528c73bce6035aff642d429d1d0f9a2"
     end
     on_arm do
-      url "https://github.com/BeryJu/crtls/releases/download/v0.1.2/crtls_0.1.2_darwin_arm64.tar.gz"
-      sha256 "5d4d1c68bd439e2c1f64634c5f969246ed406e6b9320bef7c54b09cc702426f6"
+      url "https://github.com/BeryJu/crtls/releases/download/v0.1.3/crtls_0.1.3_darwin_arm64.tar.gz"
+      sha256 "9a36622acc9f5d96665d51fbaf2fc08db2e99c1385231cdfd13e8c7cd53c30db"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/BeryJu/crtls/releases/download/v0.1.2/crtls_0.1.2_linux_amd64.tar.gz"
-      sha256 "d81aa24eb0dc7582c9eecfb38376cb6d56b69174a2c6d3d7ebbf36dd5bb407a7"
+      url "https://github.com/BeryJu/crtls/releases/download/v0.1.3/crtls_0.1.3_linux_amd64.tar.gz"
+      sha256 "129e3226a2572ce86b4ed02eb05648c628fb684caf82b73bc1999832e05c8eca"
     end
     on_arm do
-      url "https://github.com/BeryJu/crtls/releases/download/v0.1.2/crtls_0.1.2_linux_arm64.tar.gz"
-      sha256 "1d74e2a0c6ea3537da310cb6e33dd82090e37aa94b67a79de9156b675170ddc6"
+      url "https://github.com/BeryJu/crtls/releases/download/v0.1.3/crtls_0.1.3_linux_arm64.tar.gz"
+      sha256 "f01b6ca197cd8883b22a48ec62210e753004b576ce993550d6f17e4a698031de"
     end
   end
 
